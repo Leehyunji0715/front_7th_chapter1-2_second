@@ -36,17 +36,7 @@ The project follows a **custom hooks-based architecture** for separation of conc
 
 - **Presentation Layer**: `App.tsx` - UI components and rendering
 - **Business Logic Layer**: Custom hooks in `/src/hooks/`
-  - `useCalendarView` - Calendar view state management
-  - `useEventOperations` - Event CRUD operations
-  - `useEventForm` - Form state and validation
-  - `useNotifications` - Notification scheduling and management
-  - `useSearch` - Event search and filtering
 - **Utility Layer**: Pure functions in `/src/utils/`
-  - `dateUtils` - Date formatting and manipulation
-  - `eventOverlap` - Event conflict detection
-  - `eventUtils` - Event data processing
-  - `notificationUtils` - Notification time calculation
-  - `timeValidation` - Time range validation
 
 ## Folder Structure
 
