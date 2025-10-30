@@ -129,8 +129,7 @@ describe('반복 일정 생성 로직', () => {
       for (let i = 1; i < events.length; i++) {
         const prevDate = new Date(events[i - 1].date);
         const currDate = new Date(events[i].date);
-        const diffDays =
-          (currDate.getTime() - prevDate.getTime()) / (1000 * 60 * 60 * 24);
+        const diffDays = (currDate.getTime() - prevDate.getTime()) / (1000 * 60 * 60 * 24);
         expect(diffDays).toBe(7);
         expect(currDate.getDay()).toBe(3); // 3 = 수요일
       }
